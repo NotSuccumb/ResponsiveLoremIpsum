@@ -1,0 +1,186 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    width: 93.7%;
+    background-color: gainsboro;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+h2 {
+    border-top: 1px solid #555;
+    padding-top: 0.7em;
+    margin: 0 0 0.3em 0;
+    font-size: 1.65em;
+    font-weight: 300;
+    color: darkblue;
+    clear: both;
+}
+h3 {
+    margin-top: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+body > header {
+    border-top: 5px solid darkgreen;
+}
+nav > ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+nav > ul > li {
+    text-align: center;
+    padding: 0.2em 0;
+    margin: 0.2em 0;
+    background-color: #bbbbbb;
+    text-transform: uppercase;
+}
+nav > ul > li:hover {
+    background-color: #999999;
+}
+nav > ul > li > a {
+    font-weight: 400;
+    display: block;
+}
+.section1 {
+    width: 100%;
+}
+.section2{
+    width: 100%;
+    clear: both;
+}
+.section3 {
+    width: 100%;
+    clear: both;
+}
+.section3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.section3 ul li {
+    padding: 1em 0;
+    float: left;
+}
+.section3 ul li img{
+    display: block;
+    margin: 0 auto;
+}
+.section4 {
+    width: 100%;
+    clear: both;
+}
+.section4 > div {
+    float: left;
+    background-color: floralwhite;
+    border-bottom: 2px solid #dddddd;
+    width: 48.80%;
+    margin: 0 2.20% 0.65em 0;
+}
+.section4 > div:nth-of-type(2n+2) {
+    margin-right: 0px;
+}
+.section4 > div img {
+    height: auto;
+    max-width: 100%;
+}
+.section4 > div h4 {
+    margin: 0 0.65rem;
+    padding-top: 0.1rem;
+}
+.section4 > div p {
+    margin: 0 0.65rem;
+    font-size: 0.7em;
+    padding: 0.15rem 0 0.45rem 0;
+}
+body > footer {
+    clear: both;
+    padding: 1.2em 0;
+    margin-top: 2em;
+    border-top: 5px solid darkgreen;
+}
+body > footer > div > p {
+    font-size: 0.75em;
+}
+@media only screen and (min-width: 360px) {
+    .section3 ul li {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .section3 ul li {
+        width: 25%;
+    }
+    .section4 > div {
+        width: 32.3333%;
+        margin: 0 1.5% 0.65em 0;
+    }
+    .section4 > div:nth-of-type(2n+2) {
+        margin-right: 1.5%;
+    }
+    .section4 > div:nth-of-type(3n+3) {
+        margin-right: 0px;
+    }
+    body > footer .div1 {
+        float: left;
+        width: 70%;
+    }
+    body > footer .div2 {
+        float: right;
+        width: 30%;
+        text-align: right;
+    }
+}
+@media only screen and (min-width: 768px) {
+    nav > ul {
+        display: table;
+        table-layout: fixed;
+    }
+    nav > ul > li {
+        display: table-cell;
+        width: 20%;
+        border-right: 1px solid #555555;
+    }
+    nav > ul > li:last-child {
+        border: 0;
+    }
+    .section2{
+        display: table;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+    .section2 .div1{
+        width: 50%;
+        display: table-cell;
+        padding: 0 2em 0 0;
+    }
+    .section2 .div2{
+        width: 50%;
+        display: table-cell;
+        padding: 0 2em 0 0;
+    }
+    .section3 ul li {
+        width: 16.666666667%;
+    }
+    .section4 > div {
+
+    }
+    .section4 > div {
+        width: 23.5%;
+        margin: 0 2% 0.65em 0;
+    }
+    .section4 > div:nth-of-type(2n+2) {
+        margin-right: 2%;
+    }
+    .section4 > div:nth-of-type(3n+3) {
+        margin-right: 2%;
+    }
+    .section4 > div:nth-of-type(4n+4) {
+        margin-right: 0;
+    }
+}
